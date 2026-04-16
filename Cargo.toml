@@ -1,8 +1,14 @@
 [package]
-name = "csi-webserver-cli-rs"
+name = "csi-webclient"
 version = "0.1.0"
 edition = "2024"
 description = "Desktop egui client for csi-webserver REST/WebSocket control and CSI stream monitoring"
+documentation = "https://docs.rs/csi-webclient"
+homepage = "https://github.com/csi-rs/csi-webclient-rs"
+repository = "https://github.com/csi-rs/csi-webclient-rs"
+keywords = ["csi", "egui", "desktop", "websocket", "client"]
+categories = ["gui", "network-programming"]
+rust-version = "1.85"
 readme = "README.md"
 license-file = "LICENSE"
 
@@ -19,8 +25,11 @@ tokio-tungstenite = { version = "0.27.0", features = ["rustls-tls-webpki-roots"]
 
 [profile.dev]
 opt-level = 1
-
+[profile.dev.package."*"]
+opt-level = 3
 [profile.release]
 codegen-units = 1
 opt-level = 3
 strip = true
+[profile.release.package."*"]
+opt-level = 3

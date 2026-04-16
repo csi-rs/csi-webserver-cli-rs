@@ -1,4 +1,4 @@
-# csi-webserver-cli-rs
+# csi-webclient
 
 ![Preview](assets/preview.png)
 
@@ -26,6 +26,11 @@ The codebase intentionally separates responsibilities into three domains:
 - `src/core`: side effects (HTTP requests, WebSocket loop, async runtime, channels).
 
 Top-level intent orchestration and event application happen in `src/app.rs`.
+
+## Documentation
+
+- Crate-level docs for docs.rs are maintained in `docs/CRATE_DOCS.md` (independent from this README).
+- HTTP/WebSocket API reference is maintained in `docs/HTTP_API.md`.
 
 ## Webserver Compatibility
 

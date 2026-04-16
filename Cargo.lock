@@ -753,7 +753,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "csi-webserver-cli-rs"
+name = "csi-webclient"
 version = "0.1.0"
 dependencies = [
  "chrono",

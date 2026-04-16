@@ -1,4 +1,4 @@
-use csi_webserver_cli_rs::app;
+use csi_webclient::app;
 
 fn main() -> eframe::Result<()> {
     let mut options = eframe::NativeOptions::default();
